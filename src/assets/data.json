@@ -1,0 +1,19 @@
+[
+    {"Name":"Perle","Entfernung":"*","Preis":"*","VeggieTauglich":"***","Adresse":"Spitalerstraße 22, 20095 Hamburg","Kategorie":"Alles"}
+    ,
+    {"Name":"Europapassage","Entfernung":"*","Preis":"**","VeggieTauglich":"***","Adresse":"Ballindamm 40 EG2, 20095 Hamburg","Kategorie":"Alles"},
+    {"Name":"Max & Consorten","Entfernung":"***","Preis":"*","VeggieTauglich":"**","Adresse":"Spadenteich 1, 20099 Hamburg","Kategorie":"Hausmannskost"},
+    {"Name":"Luigi's","Entfernung":"***","Preis":"**","VeggieTauglich":"***","Adresse":"Ditmar-Koel-Straße 21, 20459 Hamburg","Kategorie":"Pizza / Pasta"}
+    ,
+    {"Name":"Bella Italia","Entfernung":"**","Preis":"*","VeggieTauglich":"**","Adresse":"Brandstwiete 58, 20457 Hamburg","Kategorie":"Pizza / Pasta"},
+    {"Name":"Restaurant Kabul","Entfernung":"***","Preis":"*","VeggieTauglich":"**","Adresse":"Steindamm 53, 20099 Hamburg","Kategorie":"Sonstiges"},
+    {"Name":"Goot","Entfernung":"**","Preis":"***","VeggieTauglich":"*","Adresse":"Depenau 10, 20095 Hamburg","Kategorie":"Hausmannskost"},
+    {"Name":"O-ren Ishii","Entfernung":"**","Preis":"***","VeggieTauglich":"***","Adresse":"Kleine Reichenstraße 18, 20457 Hamburg","Kategorie":"Asiatisch"}
+    ,
+    {"Name":"Better Burger Company","Entfernung":"*","Preis":"**","VeggieTauglich":"***","Adresse":"Rosenstraße Ecke, Gertrudenkirchhof, 20095 Hamburg","Kategorie":"Burger"}
+    ,
+    {"Name":"Bucks Burgers","Entfernung":"**","Preis":"**","VeggieTauglich":"***","Adresse":"Kurze Mühren 13, 20095 Hamburg","Kategorie":"Burger"}
+    ,
+    {"Name":"Mr. Cherng","Entfernung":"**","Preis":"***","VeggieTauglich":"***","Adresse":"Speersort 1, 20095 Hamburg","Kategorie":"Asiatisch"},
+    {"Name":"Franco Rathauspassage","Entfernung":"**","Preis":"**","VeggieTauglich":"***","Adresse":"Rathausmarkt 7, 20095 Hamburg","Kategorie":"Pizza / Pasta"}
+]

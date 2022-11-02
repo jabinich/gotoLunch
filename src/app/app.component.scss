@@ -1,0 +1,155 @@
+.outer_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  
+    .big_container {
+      width: 90%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      .top_bar {
+        height: 40px;
+        background-color: #ffffff;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span {margin-left: 20px;}
+        font-size: 20px;
+        font-weight: bold;
+      }
+    
+    
+      .transparent_bg {
+        background: linear-gradient(rgba(159, 225, 240, 0.904), rgba(208, 205, 205, 0.5));
+        height: auto;
+        //min-height: 400px;
+        width: 100%;
+        border-radius: 12px;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .category_bar {
+            height: auto;
+            border-bottom: 1px solid #464343;
+            display: inline-block;
+            vertical-align: middle;
+            width: 80%;
+            // background-color: rgb(213, 142, 142);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+            span {margin: 20px;}
+            .categoryItem{
+                border: #000000 solid 0px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                padding: 12px;
+                margin: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            .categoryItemSelected{
+                color: #ffffff;
+                background-color: #567b85;
+                border: #000000 solid 0px;
+                border-radius: 14px;
+                padding: 12px;
+                margin: 4px;
+                cursor: pointer;
+            }
+          }
+          .search_pane {
+            margin: 14px;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: row;
+            .search_box {
+              width: 25%;
+              display: inline-block;
+              vertical-align: middle;
+              display: flex;
+              flex-direction: column;
+              margin-right: 14px;
+              position: relative;
+              select{
+                  //position: relative;
+                  right: 20px;
+                  background-color: white; 
+                  box-shadow: 2px 2px 2px grey;
+                  width: auto;
+                  height: 25px;
+                  //font-size: 20px;
+                  @media screen and (max-width: 480px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+            button {
+              background-color: #e29e54;
+              border: 0px;
+              border-radius: 20px;
+              width: 90%;
+              height: 80%;
+              font-size: 14px;
+              font-weight: bold;
+              color: white;
+              vertical-align:baseline;
+              margin-top: 16px;
+              cursor: pointer;
+            }
+          }
+  
+          .pane {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            background-color: rgb(245, 245, 239);
+            border-radius: 12px;
+            width: 80%;
+            height: 80%;
+            padding: 20px;
+
+            .table{
+              width: 100%;
+            }
+  
+            .results {
+              //display: flex;
+              flex-direction: row;
+          }
+          
+            .headers {
+                //display: flex;
+                flex-direction: row;
+                border-bottom: 1px solid rgb(151, 145, 145);
+                width: 100%;
+                font-weight: bold;
+            }
+            
+            .cell {
+              flex: 1;
+              padding: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  

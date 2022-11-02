@@ -1,0 +1,72 @@
+<div class="outer_container">
+  
+  <div class="big_container">
+    <div class="top_bar">
+      <span>GotoLunch</span>
+    </div>
+    
+    <div class="transparent_bg">
+      <div class="container">
+        <div class="category_bar">
+          <span>Wähle Geschmäcke aus:</span>
+          <button class="categoryItem" [ngClass]="{'categoryItemSelected' : selectedCategoryList.indexOf(k) != -1}" *ngFor="let k of categoryList" value={{k}} (click)="queryWithCategory(k)">{{k}}</button>
+        </div>
+        <div class="search_pane"> 
+          <div class="search_box">
+            <span>Entfernung</span>
+            <select [(ngModel)]="selectedDistance" (ngModelChange)="getResults()">
+              <option value="" selected>Egal</option>
+              <!-- <option *ngFor ="let result of distanceList; let i=index" value={{result}}>{{result}}</option> -->
+              <option value="*">- ganz nah</option>
+              <option value="**">- nicht so weit</option>
+            </select>
+          </div>
+          <div class="search_box">
+            <span>Preis</span>
+            <select [(ngModel)]="selectedPrice" (ngModelChange)="getResults()">
+              <option value="" selected>Egal</option>
+              <!-- <option *ngFor ="let result of priceList; let i=index" value={{result}}>{{result}}</option> -->
+              <option value="*">- günsitg</option>
+              <option value="**">- nicht so teuer</option>
+            </select>
+          </div>
+          <div class="search_box">
+            <span>Veggie-Auswahl</span>
+            <select [(ngModel)]="selectedVeggie" (ngModelChange)="getResults()">
+              <option value="" selected>Egal</option>
+              <!-- <option *ngFor ="let result of veggieList; let i=index" value={{result}}>{{result}}</option> -->
+              <option value="**">- gut</option>
+              <option value="***">- sehr gut</option>
+            </select>
+          </div>
+
+          <div class="search_box">
+            <span> </span>
+            <button (click)="getReset()">zurücksetzen</button>
+          </div>
+        </div>
+        <div class="pane"> 
+          <table class="table"> 
+          <tr class="headers">
+            <td class="cell"> Name </td>
+            <td class="cell"> Entfernung </td>
+            <td class="cell"> Preis </td>
+            <td class="cell"> Veggie-Tauglich </td>
+            <td class="cell"> Adresse </td>
+          </tr>
+          
+          <tr *ngFor="let restaurant of restaurants" class="results">
+            <td class="cell"> {{restaurant.Name}}</td>
+            <td class="cell"> {{restaurant.Entfernung}}</td>
+            <td class="cell"> {{restaurant.Preis}}</td>
+            <td class="cell"> {{restaurant.VeggieTauglich}}</td>
+            <td class="cell"> {{restaurant.Adresse}}</td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
